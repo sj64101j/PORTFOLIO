@@ -15,8 +15,142 @@
   <script src="js/jquery.colorbox-min.js"></script>
   <script src="js/wow.js"></script>
   <script src="js/jquery.bxslider.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#fullpage").fullpage({
+        anchors:["1st","2st","3st","4st"],
+        menu:"#topMenu",
+        navigation:true,
+        slideNavigation:true,
+        //navigationTooltips: ['Main', 'Story', 'Introduce', 'Store'],
+        afterLoad:function(anchorslink,index){
+          console.log(anchorslink+","+index);
+
+          if(index == 2){
+
+          }else{
+
+          }
+          if(index == 3){
+
+          }else {
+
+          }
+          if(index != 3){
+
+          }
+
+          if(index == 4){
+
+          }else {
+
+          }
+
+        }
+      });
+      new WOW().init();
+//      $("#fp-nav li").eq(0).find("span").append("Main");
+    });
+  </script>
 </head>
 <body>
-  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navTop">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#1st">PORTFOLIO</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+      <li class="nav-item" data-menuanchor="1st">
+        <a class="nav-link" href="#1st">MAIN</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+  <div id="fullpage">
+    <div class="section page" id="page1" data-anchor="1st">
+      <div>
+        <div class="container">
+          <div class="row mb-4">
+            <div class="mudWrap col-4">
+              <div class="wow pulse bg-mud corner w-100 pt-5" data-wow-delay="0">
+                <p class="mud_txt pt-5 pb-2">보령 머드 축제</p>
+                <p class="mud_txt2 pt-4 px-5">보령의 관광요소 중 하나인 머드 축제를 홍보하는 사이트를 만들었습니다. 
+                머드의 색깔인 브라운 계열로 페이지를 디자인 하였고, 
+                큼직큼직한 글씨와 사진으로 쉽게 볼 수 있도록 하였습니다. </p>
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-8">
+                    <img src="images/mudmockup.png" alt="mud_mockup" class="mud_mockup w-100 pl-3">
+                    <a href="mud.html"><img src="images/mudQRCodeImg.jpg" alt="mud_QR" class="mud_QR"></a>
+                  </div>
+                  <div class="col-2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="insideWrap col-4">
+              <div class="wow pulse bg-inside corner w-100 pt-5" data-wow-delay="0.3s">
+                <p class="inside_txt mb-4 pt-5 pb-3">Inside Out</p>
+                <p class="inside_txt2 pt-2 px-5 mb-0">Pixar의 애니메이션 영화인 인사이드 아웃을 홍보하는 사이트를 만들었습니다.
+                주인공 라일리의 머릿속 색깔인 퍼플 계열로 페이지를 디자인 하였고,
+                큼직한 사진 위주의 디자인으로 보다 보기 쉽게하였습니다.</p>
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-8">
+                    <img src="images/insidemockup.png" alt="inside_mockup" class="inside_mockup w-100">
+                    <a href="inside.html"><img src="images/insideQRCodeImg.jpg" alt="inside_QR" class="inside_QR"></a>
+                  </div>
+                  <div class="col-2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="wow pulse bg-animal corner w-100" data-wow-delay="0.6s">
+                <div class="row">
+                  <div class="col-4"></div>
+                  <div class="col-4">
+                    <img src="images/animal_mockup.png" alt="animal_QR" class="animal_QR w-100">
+                    <img src="images/animalQRCodeImg.jpg" alt="animal_QR" class="animal_QR w-100">
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4">
+              <div class="wow pulse bg-lg corner w-100" data-wow-delay="0.9s">
+                <div class="row">
+                  <div class="col-4"></div>
+                  <div class="col-4">
+                    <img src="images/LGmockup2.png" alt="LG_QR" class="LG_QR w-100">
+                    <img src="images/LGQRCodeImg.jpg" alt="LG_QR" class="LG_QR w-100">
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="wow pulse bg-app corner w-100" data-wow-delay="1.2s">
+                <div class="row">
+                  <div class="col-4"></div>
+                  <div class="col-4">
+                    <img src="images/Appmockup.png" alt="안드로이드 아이콘" class="android_icon w-100 pl-5">
+                    <img src="images/Android_Studio_icon.svg.png" alt="안드로이드 아이콘" class="android_icon w-100">
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
