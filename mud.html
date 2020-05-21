@@ -48,55 +48,85 @@
 
         }
       });
-      $("#fp-nav li").eq(0).find("span").append("Main");
-      $("#fp-nav li").eq(1).find("span").append("Story");
-      $("#fp-nav li").eq(2).find("span").append("Intro");
-      $("#fp-nav li").eq(3).find("span").append("Footer");
+      
+      $(".site-click").click(function(){
+        location.href="https://sj64101j.github.io/company/"
+      })
     });
   </script>
+  <style>
+    #page2 {background: #604d3f;}
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navTop">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#1st">PORTFOLIO</a>
+    <a class="navbar-brand" href="index.html">PORTFOLIO</a>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ml-auto mt-2 mt-md-0">
-        <li class="nav-item" data-menuanchor="1st">
-          <a class="nav-link" href="#1st">MAIN</a>
-        </li>
-        <li class="nav-item" data-menuanchor="2st">
-          <a class="nav-link" href="#2st">Story</a>
-        </li>
-        <li class="nav-item" data-menuanchor="3st">
-          <a class="nav-link" href="#3st">Intro</a>
-        </li>
-        <li class="nav-item" data-menuanchor="4st">
-          <a class="nav-link" href="#4st">Footer</a>
-        </li>
-      </ul>
-    </div>
   </nav>
 
 
     <div id="fullpage">
+     
       <div class="section page" id="page1" data-anchor="1st">
-
+        <div>
+          <div class="container mb-5">
+            <div class="row">
+             
+              <div class="col-4"></div>
+              <div class="site-click col-4 clearfix" style="background: #604d3f;height: 40px;cursor: pointer;">
+                <p>사이트 바로가기</p>
+                <img src="images/click.png" alt="click" class="wow heartBeat">
+              </div>
+              <div class="col-4"></div>
+              
+            </div>
+          </div>
+          
+          <div style="background:#333;">
+            <div class="container pt-5 pb-5">
+             
+              <div class="row pt-5">
+                <div class="col-6">
+                  <p style="color: #fff;font-weight: bold;">WORK</p>
+                  <p style="color: #fff;">
+                    CSS media queries를 이용한 반응형 홈페이지<br>
+                    jQuery bxSlider 플러그인을 적용한 이미지 슬라이드<br>
+                    JavaScript 이용한 서브 탭메뉴 구현<br>
+                    modal 팝업창 구현
+                  </p>
+                </div>
+                
+                <div class="col-6 pb-5">
+                  <p class="d-inline mr-3" style="color: #fff;"><span class="mr-3" style="font-weight: bold;">YEAR</span>2020.01</p>
+                  <p class="d-inline" style="color: #fff;"><span class="mr-3" style="font-weight: bold;">TYPE</span>PC/Tablet/Mobile</p>
+                  <p class="pt-3 mb-2" style="color: #fff;font-weight: bold;">PATICIPATION</p>
+                  <p class="pu">퍼블리싱 - 100%</p>
+                  <p class="di">디자인 - 80%</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
       </div>
+      
       <div class="section page" id="page2" data-anchor="2st">
-
+        <div>
+          <div class="container">
+            <div class="row">
+              <div class="col-2"></div>
+              <div class="col-8">
+                <img src="images/mudmockup.png" alt="mud_mockup" class="w-100">
+              </div>
+              <div class="col-2"></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="section page" id="page3" data-anchor="3st">
-
-      </div>
-      <div class="section page" id="page4" data-anchor="4st">
-
-      </div>
-      <div class="section page fp-auto-height" id="page5" data-anchor="5st">
-
-      </div>
+      
     </div>
   </body>
 </html>
