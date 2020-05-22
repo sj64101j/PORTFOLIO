@@ -64,7 +64,7 @@ a:visited, a:link{text-decoration:none;color:#333;}
 .app_icon {display: none;transition: 0.5s;width: 95px;margin: 0 auto;}
 .appWrap:hover .app_icon {display: block;transform: rotateY(180deg);}
 
-#page1 {background-color: #ccc;}
+/*#page1 {background-color: #eee;}*/
 
 #fp-nav a {font-weight:bold;}
 #fp-nav a:hover {color: #000;}
@@ -82,11 +82,36 @@ p.di {position: relative;color: #fff;font-weight: bold;}
 p.di:after {position: absolute;content: "";display: block;width: 160px;height: 7px;background: #604d3f;border: 1px solid #fff;}
 
 
+
 /*inside*/
 p.pu2 {position: relative;color: #fff;font-weight: bold;}
 p.pu2:after {position: absolute;content: "";display: block;width: 200px;height: 7px;background: #1c1362;border: 1px solid #fff;}
 p.di2 {position: relative;color: #fff;font-weight: bold;}
-p.di2:after {position: absolute;content: "";display: block;width: 160px;height: 7px;background: #1c1362;border: 1px solid #fff;}
+p.di2:after {position: absolute;content: "";display: block;width: 200px;height: 7px;background: #1c1362;border: 1px solid #fff;}
+
+
+
+/*animal*/
+p.pu3 {position: relative;color: #fff;font-weight: bold;}
+p.pu3:after {position: absolute;content: "";display: block;width: 200px;height: 7px;background: #89caa2;border: 1px solid #fff;}
+p.di3 {position: relative;color: #fff;font-weight: bold;}
+p.di3:after {position: absolute;content: "";display: block;width: 180px;height: 7px;background: #89caa2;border: 1px solid #fff;}
+
+
+
+/*LG*/
+p.pu4 {position: relative;color: #fff;font-weight: bold;}
+p.pu4:after {position: absolute;content: "";display: block;width: 200px;height: 7px;background: #ef017d;border: 1px solid #fff;}
+p.di4 {position: relative;color: #fff;font-weight: bold;}
+p.di4:after {position: absolute;content: "";display: block;width: 100px;height: 7px;background: #ef017d;border: 1px solid #fff;}
+
+
+
+/*app*/
+p.pu5 {position: relative;color: #fff;font-weight: bold;}
+p.pu5:after {position: absolute;content: "";display: block;width: 200px;height: 7px;background: #86cbde;border: 1px solid #fff;}
+p.di5 {position: relative;color: #fff;font-weight: bold;}
+p.di5:after {position: absolute;content: "";display: block;width: 200px;height: 7px;background: #86cbde;border: 1px solid #fff;}
 
 
 
